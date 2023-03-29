@@ -1,5 +1,7 @@
+import './Sidemenu.css'
+
 const SideMenu = ({ clearChat, currentModel, setCurrentModel, models, setTemperature, temperature }) => 
-<aside className="sidemenu">
+<aside className="sidemenu max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
       <div className="side-menu-button" onClick={clearChat}>
         Clear Chat
       </div>

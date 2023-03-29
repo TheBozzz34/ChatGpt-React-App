@@ -20,13 +20,12 @@ app.use(cors())
 app.use(require('morgan')('dev'))
 
 
-// Routing 
 
 // Primary Open AI Route
 app.post('/', async (req, res) => {
 	const { message, currentModel, temperature } = req.body;
 	const response = await openai.createCompletion({
-		model: `${currentModel}`,// "text-davinci-003",
+		model: `${currentModel}`,
 		prompt: `${message}`,
 		max_tokens: 100, 
 		temperature,

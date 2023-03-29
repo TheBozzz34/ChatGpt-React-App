@@ -1,8 +1,9 @@
 import OpenAISVGLogo from './OpenAISVGLogo'
+import './chatbox.css'
 
 // Primary Chat Window
 const ChatBox = ({chatLog, setChatInput, handleSubmit, chatInput}) =>
-  <section className="chatbox">
+  <section className="chatbox bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
       <div className="chat-log">
         {chatLog.map((message, index) => (
           <ChatMessage key={index} message={message} />
