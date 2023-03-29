@@ -37,6 +37,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.20"
-  }
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.3.0"
+  },
+  "homepage": "https://ejames25.prepdev.org/ai-chat"
 }
